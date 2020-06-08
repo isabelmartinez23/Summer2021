@@ -4,7 +4,7 @@ public class Receipt {
 
     public static void main(String[] args) {
 
-        double taxRate =  .08;
+        double taxRate = .08;
         double tip = .15;
         int  subtotal = 38 + 40 +30;
         double totalTax = subtotal*taxRate;
