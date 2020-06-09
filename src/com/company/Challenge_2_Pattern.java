@@ -1,7 +1,7 @@
 package com.company;
 
 public class Challenge_2_Pattern {
-    public static final int SIZE=5 ;
+    public static final int SIZE=7 ;
     public static void main(String[] args) {
        TopHalf();
        BottomHalf();
