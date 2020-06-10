@@ -9,10 +9,30 @@
     package com.company;
     public class Gangsta_Name {
         public static void main(String[] args){
-            String firstName = "Isabel";
-            String lastName = "Martinez";
-            char letter = firstName.charAt(0);
-            System.out.println( letter + ". Diddy " + lastName.toUpperCase() + " " + firstName + "-izzle");
+            String fullName = "Isabel Martinez";
+            System.out.println("Your gangsta name is: ");
+            firstInitial(fullName);
+            System.out.print(". Diddy");
+            lastName(fullName);
+            firstName(fullName);
+            System.out.print("-izzle");
+    }
+    public static void lastName(String fullName){
+        int indexOf = fullName.indexOf(" ");
+        if (indexOf>0){
+            String lastName = fullName.substring(indexOf);
+            lastName = lastName.toUpperCase();
+            System.out.print(lastName);
+        }
+    }
+    public static void firstName(String fullName){
+        int indexOf = fullName.indexOf(" ");
+        String firstName = fullName.substring(0, indexOf);
+        System.out.print(" " + firstName);
+    }
+    public static void firstInitial(String fullName){
+            char initial = fullName.charAt(0);
+            System.out.print(initial);
     }
 }
 
