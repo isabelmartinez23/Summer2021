@@ -7,5 +7,8 @@ public class Gangsta_Name {
         System.out.println("Type your name, playa:");
         String name = input.nextLine();
         System.out.println(name);
+        int x = 0;
+        int y = 8;
+        System.out.println(x + " Diddy" + y + "-izzle");
     }
 }
