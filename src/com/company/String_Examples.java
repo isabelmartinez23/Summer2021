@@ -21,10 +21,12 @@ public class String_Examples {
         int indexOf = name.indexOf("a");
         System.out.println("The letter a is at index " + indexOf);
         if (indexOf>0){
-            String partial =name.substring(indexOf);
+            String partial =name.substring(indexOf+1);
             System.out.println(partial);
         }
         if (name.length()>4){
+            String partial= name.substring(1, 4);
+            System.out.println(partial);
             char letter = name.charAt(4);
             System.out.println("The letter at index 4 is " + letter);
         }
