@@ -9,7 +9,7 @@
     package com.company;
     public class Gangsta_Name {
         public static void main(String[] args){
-            String fullName = "Isabel Martinez";
+            String fullName = "Edgar Martinez";
             System.out.println("Your gangsta name is: ");
             firstInitial(fullName);
             System.out.print(". Diddy");
