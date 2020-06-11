@@ -2,10 +2,10 @@ package com.company;
 import java.util.Scanner;
 
 public class Gangsta_Name_V2 {
+    public static Scanner Keyboard = new Scanner(System.in);
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
         System.out.println("Type your full name, playa:");
-        String fullName = input.nextLine();
+        String fullName = Keyboard.nextLine();
         Challenge_2_Pattern.Line();
         System.out.println("Your gangsta name is: ");
         printName(fullName);
