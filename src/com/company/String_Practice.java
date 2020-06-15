@@ -16,7 +16,7 @@ public class String_Practice {
         for (int index = 0; index < firstWord.length(); index++) {
             character = firstWord.charAt(index);
             if (character != ' ') {
-                /*charCount++;
+                charCount++;
                 String temp = phrase.substring(index + 1);
                 indexOf = temp.indexOf(character);
                 while (indexOf >= 0) {
@@ -24,32 +24,14 @@ public class String_Practice {
                     temp = temp.substring(indexOf + 1);
                     indexOf = temp.indexOf(character);
                 }
-                //charCount = restProg(character, phrase, charCount);
                 firstWord = firstWord.replace(character, ' ');
                 System.out.println(character + " " + charCount);
-                charCount = 0; */
-                charCount = restProg(character, phrase, 0);
-                System.out.println(character + " " + charCount);
+                charCount = 0;
+
             }
         }
-        /*firstWord = phrase.substring(0, phrase.indexOf(" "));
-        for (int index = 0; index < firstWord.length(); index++){
-            character = firstWord.charAt(index);
-            if (character != ' ') {
-                charCount = restProg(character, phrase, 0);
-                System.out.println(character + " " + charCount);
-            }
-        } */
+
     }
-    public static int restProg(char character, String phrase, int charCount){
-        int indexOf = phrase.indexOf(character);
-        charCount = 0;
-        while (indexOf >= 0) {
-            charCount++;
-            phrase = phrase.substring(indexOf + 1);
-            indexOf = phrase.indexOf(character);
-        }
-        return charCount;
-    }
+
 }
 
