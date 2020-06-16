@@ -22,7 +22,7 @@ public class Challenge_Data_Types {
         double second = d + myDouble;
         String third = s + string1;
 
-        System.out.printf("\n %8.3s \n %10.4s \n %10.50s", first, second, third);
+        System.out.printf("\n %8.3s \n %10.6s \n %10.50s", first, second, third);
 
     }
 }
