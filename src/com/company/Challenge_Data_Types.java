@@ -16,7 +16,7 @@ Use input.nextLine to initialize variable
 Create a new variable that is the first inputed integer + the first variable
 Create a new variable that is the second inputed double + the double i created
 Create a third variable that is the string I created concatenated with the string they created
-Print all of these using printf so it is formatted correctly 
+Print all of these using printf so it is formatted correctly
  */
 
 public class Challenge_Data_Types {
@@ -31,14 +31,13 @@ public class Challenge_Data_Types {
         System.out.print("Type any double: ");
         double myDouble = input.nextDouble();
         System.out.print("Type any string: ");
+        input.nextLine();
         String myString = input.nextLine();
-
 
         int first = i + myInt;
         double second = d + myDouble;
         String third = s + myString;
 
-        System.out.printf("\n %8.3s \n %10.6s \n %10.50s", first, second, third);
+        System.out.printf(" %3d \n %2.1f \n %1s \n", first, second, third);
     }
-
 }
