@@ -49,16 +49,20 @@ public class Project_MadLibs {
         System.out.print("Type any plural noun: ");
         String noun6 = input.nextLine();
 
-        System.out.println("A " + noun1 + "in " + state1 + " was arrested this morning after he " + verb1
-        + " in front of " + noun2 + ". " + name1 + " had a history of " + verb2 + ", but no one, not even his " +
-        noun3 + " ever imagined he'd " + verb3 + " with a " + noun4 + " stuck in his " + bodyPart1 +
-                ". I always thought he was " + adjective1 + ", but I never thought he'd do something like this. " +
-                "Even his " + relative1 + " was surprised. After a brief " + activity1 + ", cops followed him " +
-                "to a " + restaurant1 + ", where he reportedly " + adjective2 + " in the fry machine. " +
-                "In " + month1 + ", a woman was charged with a similar crime. But rather than " +
-                verb4 + ", she " + verb5 + " with a " + adjective3 + " dog. " + "Either way, we imagine" +
-                " that after witnessing him " + verb6 + " with a " + noun5 + " there will be a lot of " +
-                noun6 + " that are going to need some therapy");
+        System.out.println("A " + noun1 + " in " + state1 + " was arrested this morning after he " + verb1
+        + " in front of " + noun2 + ". " + name1 + " had a history of " + verb2 + ", but no one, not even his ");
+        System.out.println( noun3 + " ever imagined he'd " + verb3 + " with a " + noun4 + " stuck in his " + bodyPart1 +
+                ". I always thought he was ");
+        System.out.println(adjective1 + ", but I never thought he'd do something like this. " +
+                        "Even his " + relative1 + " was surprised. After a brief ");
+        System.out.println(activity1 + ", cops followed him " +
+                        "to a " + restaurant1 + ", where he reportedly " + adjective2 + " in the fry machine. ");
+       System.out.println("In " + month1 + ", a woman was charged with a similar crime. But rather than " +
+                       verb4 + ", she " + verb5 + " with a " + adjective3 + " dog. ");
+       System.out.println("Either way, we imagine" +
+               " that after witnessing him " + verb6 + " with a " + noun5 + " there will be a lot of " +
+               noun6 + " that are going to need some therapy");
+
 
     }
 }
