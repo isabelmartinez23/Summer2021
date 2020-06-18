@@ -20,7 +20,7 @@ Create new method to do the calculations:
     Use Math.round to round total cost to the nearest whole number
     Print Line from Challenge 2 to make clear
     Print totalCost with printf to make sure there are 0 decimal places after the number
-In the main, call the method that does the equations 
+In the main, call the method that does the equations
  */
 
 public class Challenge_Operators {
