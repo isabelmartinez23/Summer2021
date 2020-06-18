@@ -14,7 +14,7 @@ Use nextInt to initialize variable for the tax percent
 Create new method to do the calculations:
     Create new double tipRate and multiple the tipPercent by .01
     Create new double taxRate and multiple the taxPercent by .01
-        Create new double totalTip which is mealCost*tipRate
+    Create new double totalTip which is mealCost*tipRate
     Create new double totalTax which is mealCost*taxRate
     Create new double totalCost which is mealCost * totalTip * totalTax
     Use Math.round to round total cost to the nearest whole number

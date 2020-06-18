@@ -23,17 +23,21 @@ public class Challenge_Condo_Statements {
         System.out.print("Type a single integer: ");
         int myInt = input.nextInt();
 
-        if (myInt % 2 == 1){
-            System.out.println("Weird");
+        do{
+            if (myInt % 2 == 1){
+                System.out.println("Weird");
+            }
+            else if (myInt % 2 == 0 && myInt >= 2 && myInt <= 5){
+                System.out.print("Not Weird");
+            }
+            else if (myInt % 2 == 0 && myInt >= 6 && myInt <= 20){
+                System.out.print("Weird");
+            }
+            else if (myInt % 2 == 0 && myInt >= 20){
+                System.out.print("Not Weird");
+            }
         }
-        else if (myInt % 2 == 0 && myInt >= 2 && myInt <= 5){
-            System.out.print("Not Weird");
-        }
-        else if (myInt % 2 == 0 && myInt >= 6 && myInt <= 20){
-            System.out.print("Weird");
-        }
-        else if (myInt % 2 == 0 && myInt >= 20){
-            System.out.print("Not Weird");
-        }
+        while (myInt >= 1 && myInt <= 137);
+
     }
 }
