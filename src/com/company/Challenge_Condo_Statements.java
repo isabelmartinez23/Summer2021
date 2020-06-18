@@ -7,12 +7,10 @@ Import Scanner
 Create scanner object
 Print "Type a single integer"
 Create variable myInt and initialize it using nextInt
-Create if loop checking whether or not the integer put in is odd by using %
+Create if loop checking whether or not the integer put in is odd by using % (If the remainder is 1, it's odd, if the remainder is 0, it's even)
     If it is, print "Weird"
-    If the remainder is 1, it's odd
-    If the remainder is 0, it's even
 Create an else if loop that tests whether or not the integer is even and in between 2 and 5 using &&
-    If it is, print "Not weird"
+    If it is, print "Not Weird"
 Create an else if loop that tests whether or not the integer is even and in between 6 and 20 using &&
     If it is, print "Weird
 Create an else if loop that tests whether or not the integer is even and above 20 using &&
