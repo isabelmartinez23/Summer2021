@@ -1,4 +1,17 @@
 package com.company;
+/*
+Isabel Martinez
+PseudoCode
+Import Scanner and create scanner object
+Ask the user for their full name
+Initialize the variable fullName with nextLine
+Create new method called lastName that finds the space in the fullName and prints everything after that
+Create new method called firstName that finds the space in the fullName and prints everything before that
+Create new method called firstInitial that finds the first character in the fullName and prints it
+Create new method called printName that takes each part of the full name and prints their gangsta name
+In the main print "your gangsta name is: " 
+In the main call the method printName after asking them for their name
+ */
 import java.util.Scanner;
 
 public class Gangsta_Name_V2 {
