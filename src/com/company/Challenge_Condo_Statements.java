@@ -29,7 +29,7 @@ public class Challenge_Condo_Statements {
             System.out.print("Type a single integer: ");
             myInt = input.nextInt();
         }
-        while (myInt < 1 || myInt > 137);
+        while (myInt < 1 || myInt >= 137);
 
         if (myInt % 2 == 1){
             System.out.println("Weird");
