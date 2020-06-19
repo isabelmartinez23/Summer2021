@@ -1,5 +1,6 @@
 package com.company;
 import java.util.Scanner;
+import java.util.Random;
 /*
 Isabel Martinez
 PseudoCode
@@ -23,25 +24,31 @@ Create an else if loop that tests whether or not the integer is even and above 2
 public class Challenge_Condo_Statements {
     public static Scanner input = new Scanner(System.in);
     public static void main(String[] args){
+        Random myInt = new Random();
+        String answer;
+            do {
+                int number1= myInt.nextInt(137) + 1;
+                System.out.println(number1);
+                loops(number1);
+                System.out.print("Do you want to quit? (Yes/No): ");
+                answer = input.next();
+            }
+            while (answer.equals("No")) ;
 
-        int myInt;
-        do {
-            System.out.print("Type a single integer: ");
-            myInt = input.nextInt();
-        }
-        while (myInt < 1 || myInt >= 137);
 
-        if (myInt % 2 == 1){
+    }
+    public static void loops(int number1){
+        if (number1 % 2 == 1){
             System.out.println("Weird");
         }
-        else if (myInt % 2 == 0 && myInt >= 2 && myInt <= 5){
-            System.out.print("Not Weird");
+        else if (number1 % 2 == 0 && number1 >= 2 && number1 <= 5){
+            System.out.println("Not Weird");
         }
-        else if (myInt % 2 == 0 && myInt >= 6 && myInt <= 20){
-            System.out.print("Weird");
+        else if (number1 % 2 == 0 && number1 >= 6 && number1 <= 20){
+            System.out.println("Weird");
         }
-        else if (myInt % 2 == 0 && myInt > 20){
-            System.out.print("Not Weird");
+        else if (number1 % 2 == 0 && number1 > 20){
+            System.out.println("Not Weird");
         }
     }
 }
