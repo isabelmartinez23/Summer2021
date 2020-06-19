@@ -24,8 +24,12 @@ Create an else if loop that tests whether or not the integer is even and above 2
 public class Challenge_Condo_Statements {
     public static Scanner input = new Scanner(System.in);
     public static void main(String[] args){
+        // this creates random integer
         Random myInt = new Random();
+        // this initializes variable that they will type in
         String answer;
+        // this prints a random number between 1-137 and runs the loops method which prints Weird or Not Weird
+        // And then asks the user whether or not it wants to quit, if the answer is no, it keeps going
             do {
                 int number1= myInt.nextInt(137) + 1;
                 System.out.println(number1);
@@ -38,15 +42,19 @@ public class Challenge_Condo_Statements {
 
     }
     public static void loops(int number1){
+        // this tests if it's odd
         if (number1 % 2 == 1){
             System.out.println("Weird");
         }
+        // this tests if it's even and is between 2 and 5
         else if (number1 % 2 == 0 && number1 >= 2 && number1 <= 5){
             System.out.println("Not Weird");
         }
+        // this tests if it's even and is between 6 and 20
         else if (number1 % 2 == 0 && number1 >= 6 && number1 <= 20){
             System.out.println("Weird");
         }
+        // this tests if it's even and above 20 
         else if (number1 % 2 == 0 && number1 > 20){
             System.out.println("Not Weird");
         }
