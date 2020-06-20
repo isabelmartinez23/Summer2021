@@ -54,7 +54,7 @@ public class Challenge_Condo_Statements {
         else if (number1 % 2 == 0 && number1 >= 6 && number1 <= 20){
             System.out.println("Weird");
         }
-        // this tests if it's even and above 20 
+        // this tests if it's even and above 20
         else if (number1 % 2 == 0 && number1 > 20){
             System.out.println("Not Weird");
         }
