@@ -65,7 +65,7 @@ public class Challenge_String {
     public static String odd(String word1) {
         // initializes the variable
         String oddLetters = "";
-        // this for loop skips every two indexes starting at 1 
+        // this for loop skips every two indexes starting at 1
         for (int oddIndex = 1; oddIndex < word1.length(); oddIndex = oddIndex + 2) {
             oddLetters = oddLetters + word1.charAt(oddIndex);
         }
