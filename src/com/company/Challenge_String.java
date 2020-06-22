@@ -1,75 +1,69 @@
 package com.company;
 import java.util.Scanner;
-import java.util.Arrays;
 /*
 Isabel Martinez
 PseudoCode
-Import Scanner and Arrays
-Create Scanner object
-In main, initialize variable to be the number of words
-Create a do while loop that says to keep asking for the number of words
-    as long as they do less than 2 or more than 10
-Create a new array for the words they will input to be able to initialize more variables
-Create for loop that asks for the user's word however many times they said and puts the words into a string
-Inside the for loop create a do while loop that makes sure the words they type in are between 2 and 10000
-Create a method called even
-    Initialize a variable for the even letters
-    Create a for loop that skips through the character indexes by 2 and prints them starting at 0
-Create a method called odd
-    Initialize a variable for the odd letters
-    Create a for loop that skips through the character indexes by 2 and prints them starting at 1
-Create another for loop in the main that prints out the even method and odd method
+Import Scanner
+Create scanner object
+Initialize variable for the number of words
+Initialize variable for the words
+Create a do while loop that asks for the number of words as lot as it's between 2 and 10
+Initialize variable with nextLine
+Create for loop with a do while loop that asks for the word and makes sure it's in between 1 and 10000 characters
+Initialize a variable with nextLine
+In that for loop, call method newWord and print it
+Create method newWord
+Initialize variable for odd and even word
+Create for loop that prints the even letters and adds them to the evenWord variable
+Create for loop that prints the odd letters and adds them to the oddWord variable
+Return evenWord + " " + oddWord
  */
 
 public class Challenge_String {
     public static Scanner input = new Scanner(System.in);
-    public static void main(String[] args) {
+    public static void main (String[] args){
+        // this initializes variable for number of words
         int numberWords;
-        // this loop asks for the number of words and makes sure it's between 1 and 10
+        // this initializes variable for the words inputed
+        String inputWord;
+        // this asks for the number words as long as it's between 2 and 10
         do {
-            System.out.print("How many words will you type? ");
+            System.out.println("How many words will you type? ");
             numberWords = input.nextInt();
-        }
-        while (numberWords < 1 || numberWords > 10);
-        // this creates an array to hold the words they type in
-        String[] inputWords = new String[numberWords];
+        } while (numberWords > 10 || numberWords < 2);
+        // this creates a buffer so Type your word: doesn't appear twice the first time
         String word1 = input.nextLine();
-        // this for loop asks for a word as many times as they said
-        for (int wordCount = 0; wordCount < numberWords; wordCount++) {
-            // this do while loop makes sure the words are between 2 and 10000 characters
-            do {
-                System.out.print("Type your word: ");
-                inputWords[wordCount] = input.nextLine();
+        // this asks for the word while making sure it's in between 1 and 10000 characters
+        for (int index = 0; index < numberWords; index++) {
+            do{
+                System.out.println("Type your word: " );
+                inputWord = input.nextLine();
             }
-            while (inputWords[wordCount].length() < 2 || inputWords[wordCount].length() >10000);
-        }
-        // this for loop runs the methods the correct number of times
-        for (int wordCount = 0; wordCount < numberWords; wordCount++){
-            System.out.print(even(inputWords[wordCount]));
-            // prints a space between even and odd
-            System.out.print(" ");
-            System.out.println(odd(inputWords[wordCount]));
+            while (inputWord.length() <= 1 || inputWord.length() > 10000);
+            // this creates a new variable by calling the method
+            String output = newWord(inputWord);
+            // this prints that variable
+            System.out.println(output);
         }
     }
-
-    public static String even(String word1) {
-        // initializes the variable
-        String evenLetters = "";
-        // this for loop skips every two indexes starting at 0
-        for (int evenIndex = 0; evenIndex < word1.length(); evenIndex = evenIndex + 2) {
-            evenLetters = evenLetters + word1.charAt(evenIndex);
+    public static String newWord(String inputWord) {
+        // this initializes odd variable
+        String oddWord = "";
+        // this initializes even variable
+        String evenWord = "";
+        // this makes the even letters by starting at 0 and adding 2
+        for (int even = 0; even < inputWord.length(); even += 2) {
+            char letter = inputWord.charAt(even);
+            // this adds those letters to the even variable
+            evenWord = evenWord + letter;
         }
-        return evenLetters;
-    }
-
-    public static String odd(String word1) {
-        // initializes the variable
-        String oddLetters = "";
-        // this for loop skips every two indexes starting at 1
-        for (int oddIndex = 1; oddIndex < word1.length(); oddIndex = oddIndex + 2) {
-            oddLetters = oddLetters + word1.charAt(oddIndex);
+        // this makes the odd letters by starting at 1 and adding 2
+        for (int odd = 1; odd < inputWord.length(); odd += 2) {
+            char letter = inputWord.charAt(odd);
+            // this adds those letters to the odd variable
+            oddWord = oddWord + letter;
         }
-        return oddLetters;
+        // this returns the output
+        return evenWord + " " + oddWord;
     }
 }
-
