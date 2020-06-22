@@ -34,7 +34,7 @@ public class Challenge_Temp_Average {
         int sum = 0;
         for (int index = 0; index < temps.length; index++){
             temps[index] = randy.nextInt(85) + 25 ;
-            System.out.println("Day " + index + " high temp: " + temps[index]);
+            System.out.println("Day " + (index + 1)+ " high temp: " + temps[index]);
             sum = sum + temps[index];
         }
         double average = (double) sum/numberDays;
