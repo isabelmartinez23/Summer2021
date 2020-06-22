@@ -20,7 +20,7 @@ Create a counter that does +1 every time a temperature is above average
 Print "The number of days above average was " + counter + " days"
  */
 
-public class Array_Practice_2 {
+public class Challenge_Temp_Average {
     public static Scanner input = new Scanner(System.in);
     public static void main(String[] args){
         int numberDays;
