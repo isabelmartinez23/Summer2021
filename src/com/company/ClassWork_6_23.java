@@ -65,7 +65,7 @@ public class ClassWork_6_23 {
         // this makes array at index 2 equal to temp
         array1 [index2] = temp;
 
-        // this returns array back to the main 
+        // this returns array back to the main
         return array1;
     }
 }
