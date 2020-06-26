@@ -107,8 +107,8 @@ public class Final_Project{
                 String answer = input.nextLine();
                 // if they say words, print this
                 if (answer.contains("words")) {
-                    System.out.print("The category is Disney, Marvel, and Star Wars characters. What is your guess? " +
-                            "(Make sure to type one word with Capital letters to signify different words!)");
+                    System.out.println("The category is Disney, Marvel, and Star Wars characters. What is your guess?");
+                    System.out.println("(Make sure to type one word with Capital letters to signify different words!)");
                     String guessWord = input.next();
                     // call method, if they get it right, add one to winCount
                     if (words(guessWord, scanFile, temp1) == true){
