@@ -86,8 +86,6 @@ public class Final_Project{
     public static void main(String[] args) throws FileNotFoundException{
         // this creates new scanner object
         Scanner input = new Scanner(System.in);
-        // this creates new file
-        File file = new File ("/Users/isabel/IdeaProjects/Summer2021/src/com/company/Final_Project.txt");
         // this initializes the temp variables
         String temp1 = "";
         int temp2 = 0;
@@ -101,7 +99,9 @@ public class Final_Project{
         welcome();
         // this do while loop asks which they want to play, calls, the method, asks if they wat to play again, and then prints scores
         do {
-                // create new scanFile object inside the loop so it resets
+            // this creates new file
+            File file = new File ("/Users/isabel/IdeaProjects/Summer2021/src/com/company/Final_Project.txt");
+            // create new scanFile object inside the loop so it resets
                 Scanner scanFile = new Scanner(file);
                 // asks which category
                 System.out.println("Do you want to play words, the lottery, or measurements? ");
@@ -216,6 +216,7 @@ public class Final_Project{
     }
     public static boolean measurements(double guessDoub, Scanner scanFile, double temp3) {
         // creates boolean variable
+        guessDoub = (((int) (guessDoub * 100))/100.0);
         boolean flag = false;
         // looks for whatever they typed in
         while (scanFile.hasNext() && flag == false) {
