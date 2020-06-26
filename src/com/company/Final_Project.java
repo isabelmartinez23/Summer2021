@@ -1,7 +1,6 @@
 package com.company;
 import java.util.*;
 import java.io.*;
-import java.util.Scanner;
 /*
 Isabel Martinez
 PseudoCode
@@ -108,7 +107,8 @@ public class Final_Project{
                 String answer = input.nextLine();
                 // if they say words, print this
                 if (answer.contains("words")) {
-                    System.out.print("The category is Disney, Marvel, and Star Wars characters. What is your guess? ");
+                    System.out.print("The category is Disney, Marvel, and Star Wars characters. What is your guess? " +
+                            "(Make sure to type one word with Capital letters to signify different words!)");
                     String guessWord = input.next();
                     // call method, if they get it right, add one to winCount
                     if (words(guessWord, scanFile, temp1) == true){
@@ -215,8 +215,8 @@ public class Final_Project{
         return flag;
     }
     public static boolean measurements(double guessDoub, Scanner scanFile, double temp3) {
-        // creates boolean variable
         guessDoub = (((int) (guessDoub * 100))/100.0);
+        // creates boolean variable
         boolean flag = false;
         // looks for whatever they typed in
         while (scanFile.hasNext() && flag == false) {
@@ -246,10 +246,18 @@ public class Final_Project{
     }
     public static void welcome(){
         // prints a welcome sign to welcome users
-        System.out.println(" +-------------------------+ ");
-        System.out.println(" |   Welcome to our game!  | ");
-        System.out.println(" |   We hope you enjoy it! | ");
-        System.out.println(" |   Erica, Isabel, Nuha   | ");
-        System.out.println(" +-------------------------+ ");
+        System.out.print("+");
+        for (int dash = 1; dash <=25 ; dash++) {
+            System.out.print("-");
+        }
+        System.out.println("+");
+        System.out.println("|   Welcome to our game!  | ");
+        System.out.println("|   We hope you enjoy it! | ");
+        System.out.println("|   Erica, Isabel, Nuha   | ");
+        System.out.print("+");
+        for (int dash = 1; dash <=25 ; dash++) {
+            System.out.print("-");
+        }
+        System.out.println("+");
     }
 }
